@@ -104,7 +104,7 @@ public class ArticleListActivity extends AppCompatActivity {
         errorTextView.setVisibility(View.GONE);
 
         NewsServiceApi api = NewsServiceProvider.getNewsApiService();
-        Call<NewsResponse> apiCall = api.getTopHeadlines(selectedCountryCode, category, "4582772f362e407b9210629773a6674f");
+        Call<NewsResponse> apiCall = api.getTopHeadlines(selectedCountryCode, category, "b629261e3a214b22bc137255b45ab9be");
 
         apiCall.enqueue(new Callback<NewsResponse>() {
             @Override
